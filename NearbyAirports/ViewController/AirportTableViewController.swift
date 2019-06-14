@@ -13,6 +13,7 @@ class AirportTableViewController: UITableViewController {
     var selectedCity: CityWrapper?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Airports near by \(selectedCity?.city.name ?? "")"
         fetchData()
     }
     func fetchData() {

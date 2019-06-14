@@ -11,7 +11,7 @@ import UIKit
 class HomeTableViewController: UITableViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
-    var viewModel = HomeViewmodel()
+    lazy var viewModel = HomeViewmodel()
     var matchingItems:[CityWrapper]? = [CityWrapper]()
     var selectedItem:CityWrapper?
     var airportDetailsHome:[Airport]?

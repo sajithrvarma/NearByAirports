@@ -48,7 +48,7 @@
                             <outlet property="delegate" destination="szx-Hf-PR5" id="fOU-XG-pyG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Choose your City" id="oXL-IP-N77"/>
+                    <navigationItem key="navigationItem" title="Choose your City" id="oXL-IP-N77" userLabel="Search"/>
                     <connections>
                         <segue destination="Af7-sM-938" kind="show" identifier="showAirports" id="SXP-df-ZkJ"/>
                     </connections>

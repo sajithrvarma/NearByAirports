@@ -30,7 +30,7 @@ struct HomeViewmodel {
         }
         
     }
-    mutating func getCityList() -> [CityWrapper] {
+    func getCityList() -> [CityWrapper]? {
         if items != nil && items!.count > 0{
             return items!
         }else{
@@ -38,19 +38,12 @@ struct HomeViewmodel {
                 //self.matchingItems = cityList
                 return cityList
             }
-            return items!
+            return nil
         }
     }
-    mutating func getCityForName(name: String) -> [CityWrapper]?{
-        let selected :[CityWrapper] = items!.filter({$0.city.name!.contains(name)}
+    func getCityForName(name: String) -> [CityWrapper]?{
+        let selected :[CityWrapper] = items!.filter({$0.city.name?.contains(name) ?? false}
         )
-        
-//        for  oneCity in items!{
-//            let cityName = oneCity.city.name
-//            if name.contains(cityName)   {
-//                selected?.append(oneCity.city)
-//            }
-//        }
         return selected
     }
 }

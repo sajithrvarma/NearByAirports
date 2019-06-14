@@ -45,7 +45,7 @@
 		D8142BE222B2B36900011ED2 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D8142BE722B2B89B00011ED2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D8142BE922B2C16B00011ED2 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		D8142BED22B3365100011ED2 /* populatedPlaces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = populatedPlaces.json; path = NearbyAirports/populatedPlaces.json; sourceTree = SOURCE_ROOT; };
+		D8142BED22B3365100011ED2 /* populatedPlaces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = populatedPlaces.json; path = NearbyAirports/Model/populatedPlaces.json; sourceTree = SOURCE_ROOT; };
 		D82BFAAA22B36007007A8873 /* AirportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTableViewCell.swift; sourceTree = "<group>"; };
 		D82BFAAC22B36DCB007A8873 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				D8142BD522B28B0E00011ED2 /* HomeTableViewController.swift */,
-				D8142BED22B3365100011ED2 /* populatedPlaces.json */,
 				D8142BD922B2B27200011ED2 /* AirportTableViewController.swift */,
 			);
 			path = ViewController;
@@ -130,6 +129,7 @@
 			children = (
 				D8142BDE22B2B32600011ED2 /* Airports.swift */,
 				D8142BE922B2C16B00011ED2 /* City.swift */,
+				D8142BED22B3365100011ED2 /* populatedPlaces.json */,
 			);
 			name = Model;
 			path = NearbyAirports/Model;

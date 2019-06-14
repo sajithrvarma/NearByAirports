@@ -16,9 +16,9 @@ extension Parsable {
     do {
       
       let jsonDecoder = JSONDecoder()
-      let forecast = try jsonDecoder.decode([Airport].self, from: data)
+      let response = try jsonDecoder.decode([Airport].self, from: data)
       
-      completion(Result.value(forecast))
+      completion(Result.value(response))
       
     }
     catch {
